@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="col-2">
 			<div class="row">
-				<a href="GVpage.php" class=" text-white">Trường ĐH Thủy Lợi-TLU</a>
+				<a href="SVpage.php" class=" text-white">Trường ĐH Thủy Lợi-TLU</a>
 
 			</div>
 		</div>

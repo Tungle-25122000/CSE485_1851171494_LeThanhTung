@@ -1,14 +1,26 @@
+<?php include('../include/func/connection.php'); ?>
 <?php
 include("../include/header/header.php");
 ?>
 
 <!--Facebook-->
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://www.facebook.com/cse.tlu.edu.vn" nonce="yuPhUa1q">
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0" nonce="ZRYPYCfw">
 </script>
 <!--//Facebook-->
 
 <div class="container">
+	<?php if (isset($_SESSION['success'])): ?>
+		<div class="error success">
+			<h3>
+				<?php
+					echo $_SESSION['success'];
+					unset($_SESSION['success']);
+				?>	
+			</h3>
+		</div>
+	<?php endif ?>
+	
 	<div class="row">
 		<div class="col-9">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -87,10 +99,10 @@ include("../include/header/header.php");
 			</div>
 		</div>
 		<div class="col">
-			<div class="fb-page" data-href="https://www.facebook.com/CodingPremium-115831256931511/" data-tabs="" data-width="200" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-				<blockquote cite="https://www.facebook.com/CodingPremium-115831256931511/" class="fb-xfbml-parse-ignore">
-					<a href="https://www.facebook.com/CodingPremium-115831256931511/">CodingPremium</a></blockquote>
-			</div>
+		<div class="fb-page" data-href="https://www.facebook.com/cse.tlu.edu.vn" data-tabs="timeline" data-width="" data-height="" data-small-header="false"
+		data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+		<blockquote cite="https://www.facebook.com/cse.tlu.edu.vn" class="fb-xfbml-parse-ignore"><a
+			href="https://www.facebook.com/cse.tlu.edu.vn">Khoa Công nghệ thông tin- Đại học Thủy lợi</a></blockquote></div>
 			
 		</div>
 	</div>

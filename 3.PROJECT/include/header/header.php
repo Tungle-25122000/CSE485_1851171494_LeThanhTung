@@ -1,7 +1,7 @@
 <?php
 	include("logo.php");
 ?>
-
+	
 <body>
 	<div class="header">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
@@ -83,6 +83,9 @@
 							<a class="dropdown-item" href="#">Học bổng</a>
 							<a class="dropdown-item" href="#">Thông báo khác</a>
 						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/BtapLon/user/DĐpages/diendan.php">Diễn đàn</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Liên hệ</a>
