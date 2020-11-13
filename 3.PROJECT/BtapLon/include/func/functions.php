@@ -3,17 +3,16 @@
 function getAllUsers()
 {
     global $conn;
-    $sql = "SELECT * FROM `users` ";
+    $sql = "SELECT * FROM posts";
     $result = mysqli_query($conn, $sql);
-    $user = mysqli_fetch_all($result);
-    return $user;
+    $users = mysqli_fetch_all($result);
+    return $users;
 }
 // for admin
-function getOneUser($Email)
+function getOneUser($id)
 {
     global $conn;
-    $Email = $_REQUEST['Email'];
-    $sql = "SELECT * FROM `users` WHERE Email = '$Email'";
+    $sql = "SELECT * FROM posts WHERE userid = '$id'";
     $result = mysqli_query($conn, $sql);
     $user = mysqli_fetch_assoc($result);
     return $user;

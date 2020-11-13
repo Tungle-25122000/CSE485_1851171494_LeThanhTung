@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Khoa Cong Nghe Thong Tin</title>
+  <title>Khoa Công Nghệ Thông Tin-Trường đại học Thủy Lợi</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,8 @@
     <div class="col-sm-4">
       <div class="row">
         <div class="col-6 col-md-4">
-          <a href="../admin/login.php">Login</a>
+          <a href="../admin/login.php"><button type="button" class="btn btn-outline-login">Login</button></a>
+          <a href="../admin/register.php"><button type="button" class="btn btn-outline-register">Register</button></a> 
         </div>
         <div class="col-6 col-md-4">
           <a href="../user/SVpage.php"><img src="../images/vi.jpg"></a>

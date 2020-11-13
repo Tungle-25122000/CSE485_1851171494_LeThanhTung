@@ -1,0 +1,59 @@
+.headerbar {
+  background-color:#1D262C;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:100px;
+  margin:0;
+  overflow:hidden;
+  padding:0;
+  position:relative
+}
+#headerbar-top {
+  background-color:ff0000;
+  height:81px;
+  text-align:center
+}
+#headerbar-top:after {
+  clear:both;
+  content:"";
+  display:block
+}
+.is-sticky #headerbar-top {
+  background-color:#3793ff;
+  box-shadow:0 0 3px rgba(0,0,0,0.9);
+  height:auto;
+  left:0;
+  padding:6px 0;
+  position:fixed;
+  right:0;
+  top:0;
+  z-index:10000!important
+}
+.is-sticky#headerbar-top.w-toolbar {
+  top:42px
+}
+.is-sticky #logo {
+  display:none;
+  height:0;
+  margin:0;
+  opacity:0;
+  transform:translateY(-200px);
+  width:0
+}
+.is-sticky .navbar {
+  text-align:center
+}
+.is-sticky .navbar li {
+  margin:0
+}
+#logo {
+  display:inline-block;
+  float:left;
+  margin-top:13px
+}
+#logo:hover {
+  text-decoration:none
+}
+
+/* .headerbar{background-color:#1D262C;background-image:url(https://illiweb.com/fa/modernbb/bg_header.svg);background-position:center center;background-repeat:no-repeat;background-size:cover;height:350px;margin:0;overflow:hidden;padding:0;position:relative}#headerbar-top{background-color:ff0000;height:81px;text-align:center}#headerbar-top:after{clear:both;content:"";display:block}.is-sticky#headerbar-top{background-color:#3793ff;box-shadow:0 0 3px rgba(0,0,0,0.9);height:auto;left:0;padding:6px 0;position:fixed;right:0;top:0;z-index:10000!important}#logo{display:inline-block;float:left;margin-top:13px}#logo:hover{text-decoration:none}#site-title,#site-title h1{color:#fff;display:block;font-size:30px;font-weight:500;margin:0;padding:0}#site-desc{clear:both;position:absolute;text-align:left;top:50%}#site-desc p{color:#fff;display:block;font-size:16px;font-weight:300;line-height:1;margin:0}.sub-header{clear:both;width:100%}.sub-header:after{clear:both;content:"";display:block}.sub-header-info{float:left}.sub-header-path{font-size:0}.sub-header-path a{display:block;float:left;font-size:1.3rem}.sub-header-path a + a{margin-left:6px}.sub-header-path a + a:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;content:"\f3d3";display:inline-block;font-family:Ionicons;font-style:normal;font-variant:normal;font-weight:400;line-height:1;margin-right:6px;speak:none;text-rendering:auto;text-transform:none;vertical-align:-1px}.sub-header-buttons{float:right} */

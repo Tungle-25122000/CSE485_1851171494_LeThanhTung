@@ -1,122 +1,68 @@
 <?php include('../include/func/connection.php'); ?>
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.:Đăng ký:.</title>
-    <link rel="stylesheet" href="/BtapLon/css/style.css">
+  <title>.:Đăng ký:.</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
-    <div class="banner">
-        <h2>Register</h2>
-    </div>
-       <form method="post" action="register.php">
-            <?php include('errors.php'); ?> 
-            <div class="input-group">
-                <label>Username</label>
-                <input type="text" name="username" value="<?php echo $username; ?>">
-            </div>
-            <div class="input-group">
-                <label>Email</label>
-                <input type="text" name="email" value="<?php echo $email; ?>">
-            </div>
-            <div class="input-group">
-                <label>Password</label>
-                <input type="password" name="password_1">
-            </div>
-            <div class="input-group">
-                <label>Confirm Password</label>
-                <input type="password" name="password_2">
-            </div>
-            <div class="input-group">
-                <button type="submit" name="register" class="btn">Register</button>
-            </div>  
-            <p>
-                Already a member? <a href="/BtapLon/admin/login.php">Sign in</a>
-            </p>
-        </form> 
-    
 
-</body>
-</html>
+<main class="container">
+  	<div class="row">
+		<div class="col-sm-12">
+			<a class="navbar-brand" href="../user/SVpage.php">
+				<img src="../images/logotlu.png">
+			</a>
+		</div>
+		<div class="col bg">
+		</div>
+		<div class="col bg">
+		<form action="register.php" method="POST">
+			<?php include('errors.php'); ?>
+			<h1 class="registers"><span style="color:blue">R</span><span style="color:red">E</span><span style="color:yellow">G</span><span style="color:blue">I</span><span style="color:violet">S</span><span style="color:green">T</span><span style="color:red">E</span><span style="color:violet">R</span></h1>
+			
+			<div class="form-group">
+			<label for="username">Tên đăng nhập</label>
+			<input type="text" class="form-control" name="username" id="username" value="<?php echo $username; ?>">
+			</div>
+			
 
+			<div class="form-group">
+			<label for="email">Email</label>
+			<input type="text" class="form-control" name="email" id="email" value="<?php echo $email; ?>">
+			</div>
+			<div class="form-group">
+			<label for="password">Mật khẩu</label>
+			<input type="password" class="form-control" name="password_1" id="password_1">
+			</div>
 
-<!-- the order of including these files is important -->
+			<div class="form-group">
+			<label for="password_2">Nhập lại mật khẩu</label>
+			<input type="password" class="form-control" name="password_2" id="password_2">
+			</div>
+			<div class="form-group">
+			<button type="submit" class="btn btn-primary text-white" name="register" id="btnSave">
+				Đăng ký
+			</button>
+			</div>
+			<div class="form-group">
+			<button type="back" class="bg-light " name="btnCancel" id="btnCancel">
+				<a class="btnCancel" href="login.php">Cancel</a>
+			</button>
+			</div>
+			<p>
+				Already a member? <a href="login.php">Đăng nhập</a>
+			</p>
 
-<!-- Source code for handling registration and login -->
-
-<!-- Section containing all css and js links -->
-<!-- <!DOCTYPE html>
-<html>
-<head>
-
-
- 
-<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Noto+Serif|Tangerine" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/BtapLon/css/style.css">
-
-<title>LifeBlog | Sign up </title>
-
-</head>
-<body>
-
-<div class="container">
-
-
-	<div class="navbar">
-	<div class="logo_div">
-		<h1>KC.08.34/16-20 Project</h1>
+		</form>
+		</div>
+		<div class="col bg">
+		</div>
 	</div>
-	<ul>
-	  <li><a class="active" href="SVpage.php">Trang chủ</a></li>
-	  <li><a href="#news">SPI</a></li>
-	  <li><a href="#contact">SPEI</a></li>
-	  <li><a href="#about">SWSI</a></li>
-	  <li><a href="#about">Dự báo</a></li>
-	</ul>
-</div>
-
-
-<div style="width: 40%; margin: 20px auto;">
-	<form method="post" action="register.php" >
-		<h2>Register on LifeBlog</h2>
-				<input 
-		 type="text"
-		 name="username"
-		 value="" 
-		 placeholder="Username">
-
-		<input 
-		 type="email"
-		 name="email"
-		 value="" 
-		 placeholder="Email">
-
-		<input 
-		 type="password"
-		 name="password_1"
-		 placeholder="Password">
-
-		<input 
-		 type="password"
-		 name="password_2"
-		 placeholder="Password confirmation">
-
-		<button type="submit" class="btn" name="reg_user">Register</button>
-		<p>
-			Already a member? <a href="login.php">Sign in</a>
-		</p>
-	</form>
-</div>
-
-
-</div>
-
-
-
-<div class="footer">
-	<p>MyViewers &copy; 2020</p>
-</div> -->
+</main>

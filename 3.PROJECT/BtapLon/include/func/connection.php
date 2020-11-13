@@ -4,8 +4,11 @@
     $username = "";
     $email = "";
     $errors = array();
-
-    $db =  mysqli_connect('localhost', 'root', '', 'registration');
+    $host = 'localhost';
+    $user = 'root';
+    $pass = '';
+    $db = 'registration';
+    $conn =  mysqli_connect($host, $user, $pass, $db);
     if (isset($_POST['register'])) {
         $username = ($_POST['username']);
         $email = ($_POST['email']);
@@ -31,10 +34,10 @@
             $password = md5($password_1);
             $sql = "INSERT INTO users (username, email, password)
                          VALUES ('$username', '$email', '$password')";
-            mysqli_query($db, $sql);
+            mysqli_query($conn, $sql);
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "You are now logged in";
-            header('location: ../user/SVpage.php');            
+            header('location: ../user/GVpage.php');            
         }
 
     }

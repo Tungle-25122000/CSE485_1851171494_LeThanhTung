@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Khoa Cong Nghe Thong Tin</title>
+  <title>Khoa Công Nghệ Thông Tin-Trường đại học Thủy Lợi</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
